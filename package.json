@@ -1,0 +1,14 @@
+{
+  "name": "plumberater-plumbing-site",
+  "version": "1.0.0",
+  "description": "Frontend and backend website for PlumberAter Plumbing.",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^4.21.2",
+    "twilio": "^6.0.2"
+  }
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Jane Tester",
+    "phone": "330-701-0611",
+    "service": "Water Heater Repair",
+    "message": "Please call me this afternoon.",
+    "receivedAt": "2026-05-23T05:31:52.812Z"
+  },
+  {
+    "id": 2,
+    "name": "SMS Test",
+    "phone": "330-701-0611",
+    "service": "Leak Repair",
+    "message": "Check text notification wiring",
+    "receivedAt": "2026-05-23T05:33:37.935Z"
+  }
+]
