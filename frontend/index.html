@@ -8,9 +8,18 @@
     name="description"
     content="PlumberAter Plumbing provides plumbing repair, water heater service, sewer and gas work, and emergency plumbing in Tarrant, Wise, Parker, and Johnson counties. Call 330-701-0611."
   />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Sora:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <div class="site-orb site-orb-one" aria-hidden="true"></div>
+  <div class="site-orb site-orb-two" aria-hidden="true"></div>
+
   <header class="site-header">
     <div class="container nav-shell">
       <a href="#home" class="brand">
@@ -41,7 +50,7 @@
   <main>
     <section class="hero" id="home">
       <div class="container hero-grid">
-        <div class="hero-copy">
+        <div class="hero-copy reveal reveal-left">
           <p class="eyebrow">Trusted plumbing service across North Texas</p>
           <h1>Let the PlumberAter plumber be your plumbing hero.</h1>
           <p class="hero-text">
@@ -57,9 +66,19 @@
             <span>Honest pricing</span>
             <span>Local DFW support</span>
           </div>
+          <div class="hero-mini-stats">
+            <article>
+              <strong>7am-7pm</strong>
+              <span>Monday-Saturday</span>
+            </article>
+            <article>
+              <strong>Fast response</strong>
+              <span>Clear updates from start to finish</span>
+            </article>
+          </div>
         </div>
 
-        <aside class="hero-card hero-photo-card">
+        <aside class="hero-card hero-photo-card reveal reveal-right">
           <img
             src="images/dp.png"
             alt="PlumberAter Plumbing team standing in front of the service van"
@@ -79,15 +98,15 @@
 
     <section class="stats">
       <div class="container stats-grid">
-        <article>
+        <article class="reveal">
           <strong>330-701-0611</strong>
           <span>Direct service line</span>
         </article>
-        <article>
+        <article class="reveal">
           <strong>4 Counties</strong>
           <span>Tarrant, Wise, Parker, and Johnson</span>
         </article>
-        <article>
+        <article class="reveal">
           <strong>Plumbing | Sewer | Gas</strong>
           <span>Residential and light commercial service</span>
         </article>
@@ -95,7 +114,7 @@
     </section>
 
     <section class="trust-band">
-      <div class="container trust-band-shell">
+      <div class="container trust-band-shell reveal">
         <p>Water heaters</p>
         <p>Sewer repairs</p>
         <p>Gas lines</p>
@@ -106,35 +125,35 @@
 
     <section class="section" id="services">
       <div class="container">
-        <div class="section-heading">
+        <div class="section-heading reveal">
           <p class="eyebrow">Services</p>
           <h2>Professional plumbing work backed by real job-site experience</h2>
         </div>
         <div class="card-grid">
-          <article class="service-card">
+          <article class="service-card reveal">
             <img src="images/service_1.png" alt="Installed water heater" class="service-image" />
             <h3>Emergency Plumbing</h3>
             <p>Urgent repair help for leaks, burst pipes, backups, and sudden plumbing issues.</p>
           </article>
-          <article class="service-card">
+          <article class="service-card reveal">
             <img src="images/service_2.png" alt="Underground plumbing repair work" class="service-image" />
             <h3>Drain Cleaning</h3>
             <p>Kitchen, bath, and main line drain cleaning to keep water moving the way it should.</p>
           </article>
-          <article class="service-card">
+          <article class="service-card reveal">
             <img src="images/service_3.png" alt="Pressure gauge used in plumbing service" class="service-image" />
             <h3>Water Heaters</h3>
             <p>Repair and replacement service for standard and tankless water heater systems.</p>
           </article>
-          <article class="service-card">
+          <article class="service-card service-card-text reveal">
             <h3>Leak Repair</h3>
             <p>Targeted leak detection and dependable repairs for pipes, faucets, and fixtures.</p>
           </article>
-          <article class="service-card">
+          <article class="service-card service-card-text reveal">
             <h3>Fixture Installation</h3>
             <p>Toilets, sinks, faucets, garbage disposals, and more installed correctly and cleanly.</p>
           </article>
-          <article class="service-card">
+          <article class="service-card service-card-text reveal">
             <h3>Maintenance</h3>
             <p>Preventive plumbing service that helps catch small problems before they get expensive.</p>
           </article>
@@ -144,11 +163,11 @@
 
     <section class="section section-accent" id="about">
       <div class="container split-grid">
-        <div>
+        <div class="reveal reveal-left">
           <p class="eyebrow">About PlumberAter</p>
           <h2>Friendly service, clear communication, and dependable field-tested plumbing results.</h2>
         </div>
-        <div>
+        <div class="reveal reveal-right">
           <p>
             PlumberAter Plumbing is focused on practical plumbing solutions for busy homeowners and
             local businesses. We keep the process simple: show up, explain the problem, fix it
@@ -168,25 +187,25 @@
 
     <section class="section" id="areas">
       <div class="container">
-        <div class="section-heading">
+        <div class="section-heading reveal">
           <p class="eyebrow">Service Areas</p>
           <h2>Service Area</h2>
           <p class="section-copy">In these counties and communities between:</p>
         </div>
         <div class="county-grid">
-          <article class="county-card">
+          <article class="county-card reveal">
             <h3>Tarrant</h3>
             <p>Fort Worth, Arlington, Mansfield, North Richland Hills, Keller, Hurst, Bedford, and Euless.</p>
           </article>
-          <article class="county-card">
+          <article class="county-card reveal">
             <h3>Wise</h3>
             <p>Decatur, Bridgeport, Rhome, Aurora, Newark, and nearby Wise County communities.</p>
           </article>
-          <article class="county-card">
+          <article class="county-card reveal">
             <h3>Parker</h3>
             <p>Weatherford, Aledo, Hudson Oaks, Willow Park, Springtown, and surrounding areas.</p>
           </article>
-          <article class="county-card">
+          <article class="county-card reveal">
             <h3>Johnson</h3>
             <p>Burleson, Cleburne, Joshua, Alvarado, Keene, and nearby Johnson County communities.</p>
           </article>
@@ -196,20 +215,20 @@
 
     <section class="section" id="reviews">
       <div class="container">
-        <div class="section-heading">
+        <div class="section-heading reveal">
           <p class="eyebrow">Reviews</p>
           <h2>What customers want from a plumber is simple</h2>
         </div>
         <div class="card-grid">
-          <article class="review-card">
+          <article class="review-card reveal">
             <p>"Quick response, fair pricing, and the repair was done right the first time."</p>
             <strong>DFW Homeowner</strong>
           </article>
-          <article class="review-card">
+          <article class="review-card reveal">
             <p>"Professional, friendly, and easy to work with when our water heater failed."</p>
             <strong>Fort Worth Customer</strong>
           </article>
-          <article class="review-card">
+          <article class="review-card reveal">
             <p>"They explained everything clearly and helped us fix a drain issue fast."</p>
             <strong>Arlington Customer</strong>
           </article>
@@ -219,7 +238,7 @@
 
     <section class="section contact-section" id="contact">
       <div class="container contact-grid">
-        <div>
+        <div class="reveal reveal-left">
           <p class="eyebrow">Contact</p>
           <h2>Tell us what is going on and we will follow up.</h2>
           <p>
@@ -233,12 +252,15 @@
           </div>
         </div>
 
-        <form class="contact-form" id="contactForm">
+        <form class="contact-form reveal reveal-right" id="contactForm">
           <label for="name">Name</label>
           <input id="name" name="name" type="text" placeholder="Your name" required />
 
           <label for="phone">Phone</label>
           <input id="phone" name="phone" type="tel" placeholder="330-701-0611" required />
+
+          <label for="address">Address</label>
+          <input id="address" name="address" type="text" placeholder="Enter a location" required />
 
           <label for="service">Service Needed</label>
           <input id="service" name="service" type="text" placeholder="Leak repair, drain cleaning, etc." required />
