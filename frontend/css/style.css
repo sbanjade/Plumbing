@@ -6,7 +6,9 @@
   --muted: #5c7182;
   --brand: #0b7a75;
   --brand-dark: #075e5a;
+  --brand-soft: #e7f5f3;
   --accent: #f59f0b;
+  --accent-soft: #fff1d6;
   --border: #d9e4ec;
   --shadow: 0 20px 50px rgba(23, 48, 66, 0.1);
 }
@@ -208,10 +210,33 @@ textarea {
   border-radius: 999px;
 }
 
+.hero-photo-card {
+  overflow: hidden;
+  padding: 0;
+}
+
+.hero-photo {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-card-copy {
+  display: grid;
+  gap: 12px;
+  padding: 24px 26px 28px;
+}
+
+.hero-card-copy p:last-child {
+  color: var(--muted);
+}
+
 .hero-card,
 .service-card,
 .review-card,
-.contact-form {
+.contact-form,
+.county-card {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 24px;
@@ -248,6 +273,25 @@ textarea {
 
 .stats {
   padding-bottom: 24px;
+}
+
+.trust-band {
+  padding-bottom: 20px;
+}
+
+.trust-band-shell {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.trust-band-shell p {
+  padding: 12px 16px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--text);
+  font-weight: 700;
+  border: 1px solid rgba(245, 159, 11, 0.18);
 }
 
 .stats-grid {
@@ -287,6 +331,11 @@ textarea {
   margin-bottom: 28px;
 }
 
+.section-copy {
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
 .section-heading h2,
 .split-grid h2,
 .contact-grid h2 {
@@ -302,6 +351,19 @@ textarea {
 .service-card,
 .review-card {
   padding: 24px;
+}
+
+.service-card {
+  display: grid;
+  gap: 14px;
+}
+
+.service-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 1px solid var(--border);
 }
 
 .service-card h3,
@@ -330,19 +392,24 @@ textarea {
   gap: 16px;
 }
 
-.area-grid {
+.county-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 14px;
+  gap: 18px;
 }
 
-.area-grid span {
-  padding: 18px;
-  text-align: center;
-  border-radius: 18px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  font-weight: 700;
+.county-card {
+  padding: 24px;
+  display: grid;
+  gap: 10px;
+}
+
+.county-card h3 {
+  font-size: 1.3rem;
+}
+
+.county-card p {
+  color: var(--muted);
 }
 
 .contact-section {
@@ -478,7 +545,7 @@ textarea {
   .split-grid,
   .contact-grid,
   .stats-grid,
-  .area-grid {
+  .county-grid {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -525,12 +592,16 @@ textarea {
   .split-grid,
   .contact-grid,
   .stats-grid,
-  .area-grid {
+  .county-grid {
     grid-template-columns: 1fr;
   }
 
   .hero {
     padding-top: 48px;
+  }
+
+  .hero-photo {
+    height: 240px;
   }
 
   .footer-shell {
