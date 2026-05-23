@@ -7,8 +7,40 @@ const apiBase =
   window.location.protocol === "file:" || !isBackendOrigin ? "http://localhost:3000" : "";
 
 if (menuBtn && siteNav) {
+  menuBtn.setAttribute("aria-expanded", "false");
+
   menuBtn.addEventListener("click", () => {
     siteNav.classList.toggle("open");
+    menuBtn.setAttribute("aria-expanded", String(siteNav.classList.contains("open")));
+  });
+}
+
+const revealItems = document.querySelectorAll(".reveal");
+
+if (revealItems.length) {
+  revealItems.forEach((item, index) => {
+    item.style.setProperty("--reveal-delay", `${Math.min(index * 0.06, 0.3)}s`);
+  });
+
+  const revealObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          return;
+        }
+
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      });
+    },
+    {
+      threshold: 0.16,
+      rootMargin: "0px 0px -40px 0px"
+    }
+  );
+
+  revealItems.forEach((item) => {
+    revealObserver.observe(item);
   });
 }
 
